@@ -44,7 +44,7 @@ namespace Lab_4
 			dividend[0] = dividend[_n] = 1;
 
 			_checkingPol = Divide(dividend, _generationPol);
-			tbToEncode.Text = string.Join(string.Empty, _checkingPol);
+			tbH.Text = string.Join(string.Empty, _checkingPol);
 		}
 
 		private static int[] Divide(int[] dividend, int[] divisor)
@@ -82,6 +82,16 @@ namespace Lab_4
 
 		private void CalculateCheckingCoefficients()
 		{
+			var result = new int[_n];
+			var toEncode = tbToEncode.Text.Select(ch => int.Parse(ch.ToString())).ToArray();
+			for (int i = 0; i<toEncode.Length; i++)
+				result[i] = toEncode[i];
+			for (int i = _k; i < _n; i++)
+			{
+				for (int j = 0; j < _k; j++)
+					result[i] ^= result[i - _k + j] * _checkingPol[_n - i - 1];
+			}
+			tbResult.Text = string.Join(string.Empty, result);
 		}
 	}
 }
