@@ -28,5 +28,20 @@ namespace Lab_4
 			CalculateCheckingPolynomial();
 			CalculateCheckingCoefficients();
 		}
+
+		private void ReadInput()
+		{
+			throw new NotImplementedException();
+		}
+
+		private void CalculateCheckingPolynomial()
+		{
+			throw new NotImplementedException();
+		}
+
+		private void CalculateCheckingCoefficients()
+		{
+			throw new NotImplementedException();
+		}
 	}
 }
