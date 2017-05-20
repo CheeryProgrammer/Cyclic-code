@@ -29,18 +29,18 @@
 		private void InitializeComponent()
 		{
 			this.label1 = new System.Windows.Forms.Label();
-			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.tbN = new System.Windows.Forms.TextBox();
 			this.label2 = new System.Windows.Forms.Label();
-			this.textBox2 = new System.Windows.Forms.TextBox();
+			this.tbK = new System.Windows.Forms.TextBox();
 			this.label3 = new System.Windows.Forms.Label();
-			this.textBox3 = new System.Windows.Forms.TextBox();
+			this.tbH = new System.Windows.Forms.TextBox();
 			this.label4 = new System.Windows.Forms.Label();
-			this.textBox4 = new System.Windows.Forms.TextBox();
+			this.tbToEncode = new System.Windows.Forms.TextBox();
 			this.label5 = new System.Windows.Forms.Label();
-			this.textBox5 = new System.Windows.Forms.TextBox();
+			this.tbResult = new System.Windows.Forms.TextBox();
 			this.btnEncode = new System.Windows.Forms.Button();
 			this.label6 = new System.Windows.Forms.Label();
-			this.textBox6 = new System.Windows.Forms.TextBox();
+			this.tbGeneration = new System.Windows.Forms.TextBox();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -52,12 +52,12 @@
 			this.label1.TabIndex = 0;
 			this.label1.Text = "n";
 			// 
-			// textBox1
+			// tbN
 			// 
-			this.textBox1.Location = new System.Drawing.Point(128, 12);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(100, 20);
-			this.textBox1.TabIndex = 1;
+			this.tbN.Location = new System.Drawing.Point(156, 12);
+			this.tbN.Name = "tbN";
+			this.tbN.Size = new System.Drawing.Size(100, 20);
+			this.tbN.TabIndex = 1;
 			// 
 			// label2
 			// 
@@ -68,66 +68,66 @@
 			this.label2.TabIndex = 0;
 			this.label2.Text = "k";
 			// 
-			// textBox2
+			// tbK
 			// 
-			this.textBox2.Location = new System.Drawing.Point(128, 38);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(100, 20);
-			this.textBox2.TabIndex = 1;
+			this.tbK.Location = new System.Drawing.Point(156, 38);
+			this.tbK.Name = "tbK";
+			this.tbK.Size = new System.Drawing.Size(100, 20);
+			this.tbK.TabIndex = 1;
 			// 
 			// label3
 			// 
 			this.label3.AutoSize = true;
 			this.label3.Location = new System.Drawing.Point(12, 93);
 			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(15, 13);
+			this.label3.Size = new System.Drawing.Size(132, 13);
 			this.label3.TabIndex = 0;
-			this.label3.Text = "H";
+			this.label3.Text = "Checking polynomial (H(x))";
 			// 
-			// textBox3
+			// tbH
 			// 
-			this.textBox3.Location = new System.Drawing.Point(128, 90);
-			this.textBox3.Name = "textBox3";
-			this.textBox3.ReadOnly = true;
-			this.textBox3.Size = new System.Drawing.Size(100, 20);
-			this.textBox3.TabIndex = 1;
+			this.tbH.Location = new System.Drawing.Point(156, 90);
+			this.tbH.Name = "tbH";
+			this.tbH.ReadOnly = true;
+			this.tbH.Size = new System.Drawing.Size(100, 20);
+			this.tbH.TabIndex = 1;
 			// 
 			// label4
 			// 
 			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(249, 15);
+			this.label4.Location = new System.Drawing.Point(271, 15);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(84, 13);
 			this.label4.TabIndex = 0;
 			this.label4.Text = "Word to encode";
 			// 
-			// textBox4
+			// tbToEncode
 			// 
-			this.textBox4.Location = new System.Drawing.Point(339, 12);
-			this.textBox4.Name = "textBox4";
-			this.textBox4.Size = new System.Drawing.Size(100, 20);
-			this.textBox4.TabIndex = 1;
+			this.tbToEncode.Location = new System.Drawing.Point(359, 12);
+			this.tbToEncode.Name = "tbToEncode";
+			this.tbToEncode.Size = new System.Drawing.Size(100, 20);
+			this.tbToEncode.TabIndex = 1;
 			// 
 			// label5
 			// 
 			this.label5.AutoSize = true;
-			this.label5.Location = new System.Drawing.Point(249, 41);
+			this.label5.Location = new System.Drawing.Point(271, 41);
 			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(37, 13);
+			this.label5.Size = new System.Drawing.Size(24, 13);
 			this.label5.TabIndex = 0;
-			this.label5.Text = "Result";
+			this.label5.Text = "F(x)";
 			// 
-			// textBox5
+			// tbResult
 			// 
-			this.textBox5.Location = new System.Drawing.Point(339, 38);
-			this.textBox5.Name = "textBox5";
-			this.textBox5.ReadOnly = true;
-			this.textBox5.Size = new System.Drawing.Size(100, 20);
-			this.textBox5.TabIndex = 1;
+			this.tbResult.Location = new System.Drawing.Point(359, 38);
+			this.tbResult.Name = "tbResult";
+			this.tbResult.ReadOnly = true;
+			this.tbResult.Size = new System.Drawing.Size(100, 20);
+			this.tbResult.TabIndex = 1;
 			// 
 			// btnEncode
 			// 
-			this.btnEncode.Location = new System.Drawing.Point(339, 88);
+			this.btnEncode.Location = new System.Drawing.Point(356, 88);
 			this.btnEncode.Name = "btnEncode";
 			this.btnEncode.Size = new System.Drawing.Size(100, 23);
 			this.btnEncode.TabIndex = 2;
@@ -140,34 +140,34 @@
 			this.label6.AutoSize = true;
 			this.label6.Location = new System.Drawing.Point(12, 67);
 			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(111, 13);
+			this.label6.Size = new System.Drawing.Size(139, 13);
 			this.label6.TabIndex = 0;
-			this.label6.Text = "Generation polynomial";
+			this.label6.Text = "Generation polynomial (G(x))";
 			// 
-			// textBox6
+			// tbGeneration
 			// 
-			this.textBox6.Location = new System.Drawing.Point(128, 64);
-			this.textBox6.Name = "textBox6";
-			this.textBox6.Size = new System.Drawing.Size(100, 20);
-			this.textBox6.TabIndex = 1;
+			this.tbGeneration.Location = new System.Drawing.Point(156, 64);
+			this.tbGeneration.Name = "tbGeneration";
+			this.tbGeneration.Size = new System.Drawing.Size(100, 20);
+			this.tbGeneration.TabIndex = 1;
 			// 
 			// CyclicCode
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(456, 123);
+			this.ClientSize = new System.Drawing.Size(471, 123);
 			this.Controls.Add(this.btnEncode);
-			this.Controls.Add(this.textBox3);
+			this.Controls.Add(this.tbH);
 			this.Controls.Add(this.label3);
-			this.Controls.Add(this.textBox5);
-			this.Controls.Add(this.textBox6);
-			this.Controls.Add(this.textBox2);
+			this.Controls.Add(this.tbResult);
+			this.Controls.Add(this.tbGeneration);
+			this.Controls.Add(this.tbK);
 			this.Controls.Add(this.label6);
 			this.Controls.Add(this.label5);
 			this.Controls.Add(this.label2);
-			this.Controls.Add(this.textBox4);
+			this.Controls.Add(this.tbToEncode);
 			this.Controls.Add(this.label4);
-			this.Controls.Add(this.textBox1);
+			this.Controls.Add(this.tbN);
 			this.Controls.Add(this.label1);
 			this.Name = "CyclicCode";
 			this.Text = "Cyclic code";
@@ -179,18 +179,18 @@
 		#endregion
 
 		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.TextBox tbN;
 		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.TextBox textBox2;
+		private System.Windows.Forms.TextBox tbK;
 		private System.Windows.Forms.Label label3;
-		private System.Windows.Forms.TextBox textBox3;
+		private System.Windows.Forms.TextBox tbH;
 		private System.Windows.Forms.Label label4;
-		private System.Windows.Forms.TextBox textBox4;
+		private System.Windows.Forms.TextBox tbToEncode;
 		private System.Windows.Forms.Label label5;
-		private System.Windows.Forms.TextBox textBox5;
+		private System.Windows.Forms.TextBox tbResult;
 		private System.Windows.Forms.Button btnEncode;
 		private System.Windows.Forms.Label label6;
-		private System.Windows.Forms.TextBox textBox6;
+		private System.Windows.Forms.TextBox tbGeneration;
 	}
 }
 
